@@ -13,7 +13,7 @@ const CustomDomainRouter = require('../lib/CustomDomainRouter');
 const router = new CustomDomainRouter();
 
 router.get('/test', (req, res) => {
-    res.send('test page');
+    res.send(`Test page. Unique name is: ${req.params.uniqueName}`);
 });
 
 
